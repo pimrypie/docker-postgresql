@@ -3,7 +3,7 @@ version: '3.9'
 services:
 
   db:
-    image: 15.7-bullseye
+    image: postgres:15.7-bullseye
     container_name: postgresql
     restart: always
     ports:
@@ -16,7 +16,7 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
 
   pgadmin:
-    image: dpage/pgadmin4:8.4
+    image: dpage/pgadmin4:8.9
     container_name: pgadmin4
     restart: always
     ports:
