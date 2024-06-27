@@ -7,7 +7,7 @@ services:
     container_name: postgresql
     restart: always
     ports:
-      - "80:80"
+      - "5433:5432"
     volumes:
       - /mnt/postgresql:/var/lib/postgresql/data
     environment:
